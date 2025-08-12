@@ -1,6 +1,6 @@
-## Detect Persistence Startup Injection
+## Detect-Persistence-Startup-Injection.sh
 
-This script scans for malicious persistence mechanisms in startup files and shell configurations, providing a JSON-formatted output for integration with security tools like OSSEC/Wazuh.
+This script scans for malicious persistence mechanisms in startup files and shell configurations, providing a JSON-formatted output for integration with your SIEM.
 
 ### Overview
 
