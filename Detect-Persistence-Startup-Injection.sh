@@ -177,7 +177,7 @@ fi
 
 payload="{\"targets\":[$payload_items],\"severity\":\"$overall_sev\",\"recent_days\":\"$RECENT_DAYS\",\"hash_all\":\"$HASH_ALL\",\"fix_applied\":$([ $FIX_MADE -eq 1 ] && echo true || echo false),\"remediations\":$remediations}"
 ts=$(date --iso-8601=seconds 2>/dev/null || date '+%Y-%m-%dT%H:%M:%S%z')
-final_json="{\"timestamp\":\"$ts\",\"host\":\"$HostName\",\"action\":\"$ScriptName\",\"data\":$payload,\"copilot_soar\":true}"
+final_json="{\"timestamp\":\"$ts\",\"host\":\"$HostName\",\"action\":\"$ScriptName\",\"data\":$payload,\"copilot_action\":true}"
 
 tmpfile=$(mktemp)
 printf '%s\n' "$final_json" > "$tmpfile"
